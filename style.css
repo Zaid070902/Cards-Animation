@@ -1,0 +1,209 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+#Page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 300px;
+    width: 200px;
+    margin: 20px;
+    /* background-image: linear-gradient(to bottom, rgb(80, 0, 80) , rgb(50, 0, 50)); */
+    background-image: linear-gradient(to bottom, rgb(50, 0, 80) , rgb(80, 0, 110));
+    box-shadow: 0 0 15px #111;
+}
+
+.c1{
+    animation: move 3s infinite 2s;
+}
+
+.c2{
+    animation: move1 3s infinite 2s;
+}
+
+.c3{
+    animation: move2 2s infinite 2s;
+}
+
+.c4{
+    animation: move3 2s infinite 2s;
+}
+
+@keyframes move{
+    0%{
+
+    }
+
+    24%{
+        transform: translateY(55%);
+    }
+
+    38%{
+        transform: translateY(55%) translateX(120%);
+    }
+
+    52%{
+        transform: translateY(0%) translateX(120%) ;
+    }
+
+    66%{
+        transform: translateY(-55%) translate(120%) ;
+    }
+
+    80%{
+        transform: translateY(-55%);
+    }
+
+    100%{
+        transform: translate(0%);
+    }
+
+}
+
+@keyframes move1{
+    0%{
+
+    }
+
+    24%{
+        transform: translateY(-55%);
+    }
+
+    38%{
+        transform: translateY(-55%) translateX(-120%);
+    }
+
+    52%{
+        transform: translateY(0%) translateX(-120%);
+    }
+
+    66%{
+        transform: translateY(55%) translate(-120%);
+    }
+
+    80%{
+        transform: translateY(55%);
+    }
+
+    100%{
+        transform: translate(0%);
+    }
+
+}
+
+@keyframes move2{
+    0%{
+
+    }
+
+    24%{
+        transform: translateY(55%);
+    }
+
+    38%{
+        transform: translateY(55%) translateX(120%);
+    }
+
+    52%{
+        transform: translateY(0%) translateX(120%) ;
+    }
+
+    66%{
+        transform: translateY(-55%) translate(120%) ;
+    }
+
+    80%{
+        transform: translateY(-55%);
+    }
+
+    100%{
+        transform: translate(0%);
+    }
+
+}
+
+@keyframes move3{
+    0%{
+
+    }
+
+    24%{
+        transform: translateY(-55%);
+    }
+
+    38%{
+        transform: translateY(-55%) translateX(-120%);
+    }
+
+    52%{
+        transform: translateY(0%) translateX(-120%);
+    }
+
+    66%{
+        transform: translateY(55%) translate(-120%);
+    }
+
+    80%{
+        transform: translateY(55%);
+    }
+
+    100%{
+        transform: translate(0%);
+    }
+
+}
+
+@media only screen and (max-width:1440px){
+    .card{
+        height: 280px;
+        width: 180px;
+    }
+    
+}
+
+@media only screen and (max-width:1024px){
+    .card{
+        height: 250px;
+        width: 170px;
+    }
+    
+}
+
+@media only screen and (max-width:768px){
+    .card{
+        height: 230px;
+        width: 150px;
+    }
+    
+}
+
+@media only screen and (max-width:425px){
+    .card{
+        height: 130px;
+        width: 100px;
+        margin: 10px;
+    }    
+}
+
+@media only screen and (max-width:375px){
+    .card{
+        height: 80px;
+        width: 50px;
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .card{
+        height: 70px;
+        width: 50px;    
+        margin: 10px;
+
+    }   
+}
